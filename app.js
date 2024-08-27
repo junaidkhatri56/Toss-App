@@ -3,7 +3,7 @@ var result = document.querySelector('#result');
 var choose = document.querySelector('#choose');
 
 function toss(choice){
-     var tossResult = Math.round(Math.random()*2) ;
+     var tossResult = Math.ceil(Math.random()*2) ;
      if(tossResult === 1 && choice === 'head'){
         choose.innerHTML = 'YOU CHOOSE HEAD';
         result.innerHTML = 'CONGRATS! YOU WON THE TOSS';
